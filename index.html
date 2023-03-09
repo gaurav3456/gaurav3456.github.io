@@ -23,6 +23,34 @@
         left: 5.4%;
         border: 1px solid rgb(232, 232, 232);
     }
+    /* Style the nested unordered list */
+  ol > li > ul {
+    display: none; /* Hide the list by default */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+  }
+  /* Show the list when the parent list item is hovered */
+  ol > li:hover > ul {
+    display: block;
+  }
+  /* Style the list items */
+  ol > li > ul > li {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+  }
+  /* Style the links */
+  ol > li > ul > li > a {
+    color: #333;
+    text-decoration: none;
+  }
+  /* Style the links on hover */
+  ol > li > ul > li > a:hover {
+    color: #007bff;
+  }
   </style>
 </head>
 
@@ -32,16 +60,18 @@
   <hr>
 
   <div>
-  <h1>DSTE 601 Assignments</h1><ol style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+  <ol style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
   <li><a href="https://gaurav1390.github.io/Assignment_1" target="_blank">Assignment 1</a></li>
   <li><a href="https://gaurav1390.github.io/Assignment_2" target="_blank">Assignment 2</a></li>
   <li><a href="https://gaurav1390.github.io/Assignment_3" target="_blank">Assignment 3</a></li>
   <li><a href="https://gaurav1390.github.io/Assignment_4" target="_blank">Assignment 4</a></li>
   <li><a href="https://gaurav1390.github.io/Assignment_5" target="_blank">Assignment 5</a></li>
-  <li><a href="./Assignment_6" target="_blank">Assignment 6</a>
+  <li>
+    <a href="#">Assignment 6 &#9662;</a>
     <ul>
-      <li><a href="./Assignment_6.1" target="_blank">Assignment 6.1</a></li>
-      <li><a href="./Assignment_6.2" target="_blank">Assignment 6.2</a></li>
+      <li><a href="https://gaurav1390.github.io/Assignment_6" target="_blank">Assignment 6</a></li>
+      <li><a href="https://gaurav1390.github.io/Assignment_6.1" target="_blank">Assignment 6.1</a></li>
+      <li><a href="https://gaurav1390.github.io/Assignment_6.2" target="_blank">Assignment 6.2</a></li>
     </ul>
   </li>
 </ol>
